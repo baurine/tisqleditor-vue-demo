@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@tidbcloud/codemirror-extension-themes':
+        specifier: ^0.0.6
+        version: 0.0.6(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.28.6)(@lezer/highlight@1.2.0)
+      '@tidbcloud/tisqleditor-vue':
+        specifier: ^0.0.3
+        version: 0.0.3(@codemirror/autocomplete@6.17.0(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.28.6)(@lezer/common@1.2.1))(@codemirror/commands@6.3.3)(@codemirror/lang-sql@6.7.0(@codemirror/view@6.28.6))(@codemirror/language@6.10.2)(@codemirror/lint@6.8.1)(@codemirror/search@6.5.6)(@codemirror/state@6.4.1)(@codemirror/view@6.28.6)(vue@3.4.34(typescript@5.5.4))
       vue:
         specifier: ^3.4.31
         version: 3.4.34(typescript@5.5.4)
@@ -43,6 +49,35 @@ packages:
   '@babel/types@7.24.9':
     resolution: {integrity: sha512-xm8XrMKz0IlUdocVbYJe0Z9xEgidU7msskG8BbhnTPK/HZ2z/7FP7ykqPgrUH+C+r414mNfNWam1f2vqOjqjYQ==}
     engines: {node: '>=6.9.0'}
+
+  '@codemirror/autocomplete@6.17.0':
+    resolution: {integrity: sha512-fdfj6e6ZxZf8yrkMHUSJJir7OJkHkZKaOZGzLWIYp2PZ3jd+d+UjG8zVPqJF6d3bKxkhvXTPan/UZ1t7Bqm0gA==}
+    peerDependencies:
+      '@codemirror/language': ^6.0.0
+      '@codemirror/state': ^6.0.0
+      '@codemirror/view': ^6.0.0
+      '@lezer/common': ^1.0.0
+
+  '@codemirror/commands@6.3.3':
+    resolution: {integrity: sha512-dO4hcF0fGT9tu1Pj1D2PvGvxjeGkbC6RGcZw6Qs74TH+Ed1gw98jmUgd2axWvIZEqTeTuFrg1lEB1KV6cK9h1A==}
+
+  '@codemirror/lang-sql@6.7.0':
+    resolution: {integrity: sha512-KMXp6rtyPYz6RaElvkh/77ClEAoQoHRPZo0zutRRialeFs/B/X8YaUJBCnAV2zqyeJPLZ4hgo48mG8TKoNXfZA==}
+
+  '@codemirror/language@6.10.2':
+    resolution: {integrity: sha512-kgbTYTo0Au6dCSc/TFy7fK3fpJmgHDv1sG1KNQKJXVi+xBTEeBPY/M30YXiU6mMXeH+YIDLsbrT4ZwNRdtF+SA==}
+
+  '@codemirror/lint@6.8.1':
+    resolution: {integrity: sha512-IZ0Y7S4/bpaunwggW2jYqwLuHj0QtESf5xcROewY6+lDNwZ/NzvR4t+vpYgg9m7V8UXLPYqG+lu3DF470E5Oxg==}
+
+  '@codemirror/search@6.5.6':
+    resolution: {integrity: sha512-rpMgcsh7o0GuCDUXKPvww+muLA1pDJaFrpq/CCHtpQJYz8xopu4D1hPcKRoDD0YlF8gZaqTNIRa4VRBWyhyy7Q==}
+
+  '@codemirror/state@6.4.1':
+    resolution: {integrity: sha512-QkEyUiLhsJoZkbumGZlswmAhA7CBU02Wrz7zvH4SrcifbsqwlXShVXg65f3v/ts57W3dqyamEriMhij1Z3Zz4A==}
+
+  '@codemirror/view@6.28.6':
+    resolution: {integrity: sha512-bhwB1AZ6zU4M3dNKm8Aa2BXwj5mWDqE9IWpqxYKJoLCnx+AcwcMuLO01tLWgc1mx4vT1IVYVqx86YoqUsATrqQ==}
 
   '@esbuild/aix-ppc64@0.21.5':
     resolution: {integrity: sha512-1SDgH6ZSPTlggy1yI6+Dbkiz8xzpHJEVAlF/AM1tHPLsf5STom9rwtjE4hKAF20FfXXNTFqEYXyJNWh1GiZedQ==}
@@ -185,6 +220,15 @@ packages:
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
 
+  '@lezer/common@1.2.1':
+    resolution: {integrity: sha512-yemX0ZD2xS/73llMZIK6KplkjIjf2EvAHcinDi/TfJ9hS25G0388+ClHt6/3but0oOxinTcQHJLDXh6w1crzFQ==}
+
+  '@lezer/highlight@1.2.0':
+    resolution: {integrity: sha512-WrS5Mw51sGrpqjlh3d4/fOwpEV2Hd3YOkp9DBt4k8XZQcoTHZFB7sx030A6OcahF4J1nDQAa3jXlTVVYH50IFA==}
+
+  '@lezer/lr@1.4.1':
+    resolution: {integrity: sha512-CHsKq8DMKBf9b3yXPDIU4DbH+ZJd/sJdYOW2llbW/HudP5u0VS6Bfq1hLYfgU7uAYGFIyGGQIsSOXGPEErZiJw==}
+
   '@rollup/rollup-android-arm-eabi@4.19.0':
     resolution: {integrity: sha512-JlPfZ/C7yn5S5p0yKk7uhHTTnFlvTgLetl2VxqE518QgyM7C9bSfFTYvB/Q/ftkq0RIPY4ySxTz+/wKJ/dXC0w==}
     cpu: [arm]
@@ -265,6 +309,52 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@tidbcloud/codemirror-extension-basic-setup@0.0.6':
+    resolution: {integrity: sha512-LTehh6xsRdAW9UzRBqIaOsoavDbeUiHUxA9VLDJv3UZ3iAD7nZJm3SjCQiJyOycr2BPKvBZ2OwKUDCU419Nowg==}
+    peerDependencies:
+      '@codemirror/autocomplete': ^6.16.2
+      '@codemirror/commands': 6.3.3
+      '@codemirror/language': ^6.10.2
+      '@codemirror/lint': ^6.8.0
+      '@codemirror/search': ^6.5.6
+      '@codemirror/state': ^6.4.1
+      '@codemirror/view': ^6.26.3
+
+  '@tidbcloud/codemirror-extension-cur-sql@0.0.6':
+    resolution: {integrity: sha512-PgvOqH7UXzOrGAuapyuZjDvE4/5shHmhVb8P6SjI5dYw6HRV4Yw/24sILzDOhgCf4J6MNXVZD9r+n7A8FO+jcA==}
+    peerDependencies:
+      '@codemirror/lang-sql': ^6.6.4
+      '@codemirror/state': ^6.4.1
+      '@codemirror/view': ^6.26.3
+
+  '@tidbcloud/codemirror-extension-sql-parser@0.0.6':
+    resolution: {integrity: sha512-lB+1aRZhOY6f36lf7qQjljMw0bpNISXhvFr1AkaAy/UjCllhEzho2yoYT4ymM7p4v+lC6/flshe7JOUBvM6k7Q==}
+    peerDependencies:
+      '@codemirror/lang-sql': ^6.6.4
+      '@codemirror/language': ^6.10.2
+      '@codemirror/state': ^6.4.1
+      '@codemirror/view': ^6.26.3
+
+  '@tidbcloud/codemirror-extension-themes@0.0.6':
+    resolution: {integrity: sha512-rl1RV4VR7M/WrgQM4RZSq4HiA9cWa/4mJjY4LtBEelQqdeMdJ8fYnIZkRoXrUf1ALeWo7IkX+AtmKDQxaXjTDQ==}
+    peerDependencies:
+      '@codemirror/language': ^6.10.2
+      '@codemirror/state': ^6.4.1
+      '@codemirror/view': ^6.26.3
+      '@lezer/highlight': ^1.2.0
+
+  '@tidbcloud/tisqleditor-vue@0.0.3':
+    resolution: {integrity: sha512-u5jRr1/Ojm7qKYCKih+EerMXcp6orKAq/8WWhajTnnvFJHBYpEp1y4J1kydJ9k4kfvZ6UKkReRQE+RyHgIo6FA==}
+    peerDependencies:
+      vue: ^3.4.31
+
+  '@tidbcloud/tisqleditor@0.0.6':
+    resolution: {integrity: sha512-3dIRks9+d/E+AXaqcWfiemySs6WQHZq8VBd0kR8UT6ms5AjAIIr5zbMzMM+uD6qYl/pdOMC/aY1uQbhabfBTeA==}
+    peerDependencies:
+      '@codemirror/lang-sql': ^6.6.4
+      '@codemirror/state': ^6.4.1
+      '@codemirror/view': ^6.26.3
+
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
 
@@ -333,6 +423,9 @@ packages:
   computeds@0.0.1:
     resolution: {integrity: sha512-7CEBgcMjVmitjYo5q8JTJVra6X5mQ20uTThdK+0kR7UEaDrAWEQcRiBtWJzga4eRpP6afNwwLsX2SET2JhVB1Q==}
 
+  crelt@1.0.6:
+    resolution: {integrity: sha512-VQ2MBenTq1fWZUH9DJNGti7kKv6EeAuYr3cLwxUWhIu1baTaXh4Ib5W2CqHVqib4/MqbYGJqiL3Zb8GJZr3l4g==}
+
   csstype@3.1.3:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
 
@@ -399,6 +492,9 @@ packages:
     resolution: {integrity: sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==}
     engines: {node: '>=0.10.0'}
 
+  style-mod@4.1.2:
+    resolution: {integrity: sha512-wnD1HyVqpJUI2+eKZ+eo1UwghftP6yuFheBqqe+bWCotBjC2K1YnteJILRMs3SM4V/0dLEW1SC27MWP5y+mwmw==}
+
   to-fast-properties@2.0.0:
     resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==}
     engines: {node: '>=4'}
@@ -453,6 +549,9 @@ packages:
       typescript:
         optional: true
 
+  w3c-keyname@2.2.8:
+    resolution: {integrity: sha512-dpojBhNsCNN7T82Tm7k26A6G9ML3NkhDsnw9n/eoxSRlVBB4CEtIQ/KTCLI2Fwf3ataSXRhYFkQi3SlnFwPvPQ==}
+
 snapshots:
 
   '@babel/helper-string-parser@7.24.8': {}
@@ -468,6 +567,60 @@ snapshots:
       '@babel/helper-string-parser': 7.24.8
       '@babel/helper-validator-identifier': 7.24.7
       to-fast-properties: 2.0.0
+
+  '@codemirror/autocomplete@6.17.0(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.28.6)(@lezer/common@1.2.1)':
+    dependencies:
+      '@codemirror/language': 6.10.2
+      '@codemirror/state': 6.4.1
+      '@codemirror/view': 6.28.6
+      '@lezer/common': 1.2.1
+
+  '@codemirror/commands@6.3.3':
+    dependencies:
+      '@codemirror/language': 6.10.2
+      '@codemirror/state': 6.4.1
+      '@codemirror/view': 6.28.6
+      '@lezer/common': 1.2.1
+
+  '@codemirror/lang-sql@6.7.0(@codemirror/view@6.28.6)':
+    dependencies:
+      '@codemirror/autocomplete': 6.17.0(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.28.6)(@lezer/common@1.2.1)
+      '@codemirror/language': 6.10.2
+      '@codemirror/state': 6.4.1
+      '@lezer/common': 1.2.1
+      '@lezer/highlight': 1.2.0
+      '@lezer/lr': 1.4.1
+    transitivePeerDependencies:
+      - '@codemirror/view'
+
+  '@codemirror/language@6.10.2':
+    dependencies:
+      '@codemirror/state': 6.4.1
+      '@codemirror/view': 6.28.6
+      '@lezer/common': 1.2.1
+      '@lezer/highlight': 1.2.0
+      '@lezer/lr': 1.4.1
+      style-mod: 4.1.2
+
+  '@codemirror/lint@6.8.1':
+    dependencies:
+      '@codemirror/state': 6.4.1
+      '@codemirror/view': 6.28.6
+      crelt: 1.0.6
+
+  '@codemirror/search@6.5.6':
+    dependencies:
+      '@codemirror/state': 6.4.1
+      '@codemirror/view': 6.28.6
+      crelt: 1.0.6
+
+  '@codemirror/state@6.4.1': {}
+
+  '@codemirror/view@6.28.6':
+    dependencies:
+      '@codemirror/state': 6.4.1
+      style-mod: 4.1.2
+      w3c-keyname: 2.2.8
 
   '@esbuild/aix-ppc64@0.21.5':
     optional: true
@@ -540,6 +693,16 @@ snapshots:
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
+  '@lezer/common@1.2.1': {}
+
+  '@lezer/highlight@1.2.0':
+    dependencies:
+      '@lezer/common': 1.2.1
+
+  '@lezer/lr@1.4.1':
+    dependencies:
+      '@lezer/common': 1.2.1
+
   '@rollup/rollup-android-arm-eabi@4.19.0':
     optional: true
 
@@ -587,6 +750,68 @@ snapshots:
 
   '@rollup/rollup-win32-x64-msvc@4.19.0':
     optional: true
+
+  '@tidbcloud/codemirror-extension-basic-setup@0.0.6(@codemirror/autocomplete@6.17.0(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.28.6)(@lezer/common@1.2.1))(@codemirror/commands@6.3.3)(@codemirror/language@6.10.2)(@codemirror/lint@6.8.1)(@codemirror/search@6.5.6)(@codemirror/state@6.4.1)(@codemirror/view@6.28.6)':
+    dependencies:
+      '@codemirror/autocomplete': 6.17.0(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.28.6)(@lezer/common@1.2.1)
+      '@codemirror/commands': 6.3.3
+      '@codemirror/language': 6.10.2
+      '@codemirror/lint': 6.8.1
+      '@codemirror/search': 6.5.6
+      '@codemirror/state': 6.4.1
+      '@codemirror/view': 6.28.6
+
+  '@tidbcloud/codemirror-extension-cur-sql@0.0.6(@codemirror/lang-sql@6.7.0(@codemirror/view@6.28.6))(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.28.6)':
+    dependencies:
+      '@codemirror/lang-sql': 6.7.0(@codemirror/view@6.28.6)
+      '@codemirror/state': 6.4.1
+      '@codemirror/view': 6.28.6
+      '@tidbcloud/codemirror-extension-sql-parser': 0.0.6(@codemirror/lang-sql@6.7.0(@codemirror/view@6.28.6))(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.28.6)
+    transitivePeerDependencies:
+      - '@codemirror/language'
+
+  '@tidbcloud/codemirror-extension-sql-parser@0.0.6(@codemirror/lang-sql@6.7.0(@codemirror/view@6.28.6))(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.28.6)':
+    dependencies:
+      '@codemirror/lang-sql': 6.7.0(@codemirror/view@6.28.6)
+      '@codemirror/language': 6.10.2
+      '@codemirror/state': 6.4.1
+      '@codemirror/view': 6.28.6
+
+  '@tidbcloud/codemirror-extension-themes@0.0.6(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.28.6)(@lezer/highlight@1.2.0)':
+    dependencies:
+      '@codemirror/language': 6.10.2
+      '@codemirror/state': 6.4.1
+      '@codemirror/view': 6.28.6
+      '@lezer/highlight': 1.2.0
+
+  '@tidbcloud/tisqleditor-vue@0.0.3(@codemirror/autocomplete@6.17.0(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.28.6)(@lezer/common@1.2.1))(@codemirror/commands@6.3.3)(@codemirror/lang-sql@6.7.0(@codemirror/view@6.28.6))(@codemirror/language@6.10.2)(@codemirror/lint@6.8.1)(@codemirror/search@6.5.6)(@codemirror/state@6.4.1)(@codemirror/view@6.28.6)(vue@3.4.34(typescript@5.5.4))':
+    dependencies:
+      '@tidbcloud/tisqleditor': 0.0.6(@codemirror/autocomplete@6.17.0(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.28.6)(@lezer/common@1.2.1))(@codemirror/commands@6.3.3)(@codemirror/lang-sql@6.7.0(@codemirror/view@6.28.6))(@codemirror/language@6.10.2)(@codemirror/lint@6.8.1)(@codemirror/search@6.5.6)(@codemirror/state@6.4.1)(@codemirror/view@6.28.6)
+      vue: 3.4.34(typescript@5.5.4)
+    transitivePeerDependencies:
+      - '@codemirror/autocomplete'
+      - '@codemirror/commands'
+      - '@codemirror/lang-sql'
+      - '@codemirror/language'
+      - '@codemirror/lint'
+      - '@codemirror/search'
+      - '@codemirror/state'
+      - '@codemirror/view'
+
+  '@tidbcloud/tisqleditor@0.0.6(@codemirror/autocomplete@6.17.0(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.28.6)(@lezer/common@1.2.1))(@codemirror/commands@6.3.3)(@codemirror/lang-sql@6.7.0(@codemirror/view@6.28.6))(@codemirror/language@6.10.2)(@codemirror/lint@6.8.1)(@codemirror/search@6.5.6)(@codemirror/state@6.4.1)(@codemirror/view@6.28.6)':
+    dependencies:
+      '@codemirror/lang-sql': 6.7.0(@codemirror/view@6.28.6)
+      '@codemirror/state': 6.4.1
+      '@codemirror/view': 6.28.6
+      '@tidbcloud/codemirror-extension-basic-setup': 0.0.6(@codemirror/autocomplete@6.17.0(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.28.6)(@lezer/common@1.2.1))(@codemirror/commands@6.3.3)(@codemirror/language@6.10.2)(@codemirror/lint@6.8.1)(@codemirror/search@6.5.6)(@codemirror/state@6.4.1)(@codemirror/view@6.28.6)
+      '@tidbcloud/codemirror-extension-cur-sql': 0.0.6(@codemirror/lang-sql@6.7.0(@codemirror/view@6.28.6))(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.28.6)
+      '@tidbcloud/codemirror-extension-sql-parser': 0.0.6(@codemirror/lang-sql@6.7.0(@codemirror/view@6.28.6))(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.28.6)
+    transitivePeerDependencies:
+      - '@codemirror/autocomplete'
+      - '@codemirror/commands'
+      - '@codemirror/language'
+      - '@codemirror/lint'
+      - '@codemirror/search'
 
   '@types/estree@1.0.5': {}
 
@@ -687,6 +912,8 @@ snapshots:
 
   computeds@0.0.1: {}
 
+  crelt@1.0.6: {}
+
   csstype@3.1.3: {}
 
   de-indent@1.0.2: {}
@@ -774,6 +1001,8 @@ snapshots:
 
   source-map-js@1.2.0: {}
 
+  style-mod@4.1.2: {}
+
   to-fast-properties@2.0.0: {}
 
   typescript@5.5.4: {}
@@ -804,3 +1033,5 @@ snapshots:
       '@vue/shared': 3.4.34
     optionalDependencies:
       typescript: 5.5.4
+
+  w3c-keyname@2.2.8: {}

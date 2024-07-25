@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tidbcloud/codemirror-extension-themes": "^0.0.6",
+    "@tidbcloud/tisqleditor-vue": "^0.0.3",
     "vue": "^3.4.31"
   },
   "devDependencies": {
