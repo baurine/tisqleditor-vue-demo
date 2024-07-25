@@ -1,6 +1,6 @@
 # TiSQLEditor Vue Component Demo
 
-This demo is created by Vue3+Typescript+Vite, for `@tidbcloud/tisqleditor-vue` package.
+This demo is used to test `@tidbcloud/tisqleditor-vue` package, created by Vue3+Typescript+Vite.
 
 ## Preview
 

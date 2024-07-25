@@ -11,6 +11,7 @@ function toggle() {
 
 <template>
   <EditorCacheProvide>
+    <h2>TiSQLEditor Vue Component Demo</h2>
     <button @click="toggle">
       toggle theme: {{ isDark ? "dark" : "light" }}
     </button>
